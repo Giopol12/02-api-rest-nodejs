@@ -9,7 +9,7 @@ export const config: Knex.Config = {
       ? {
           filename: env.DATABASE_URL,
         }
-      : env.DATABASE_URL,
+      : env.DATABASE_CLIENT,
   useNullAsDefault: true,
   migrations: {
     extension: 'ts',
